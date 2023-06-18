@@ -1,0 +1,1055 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+    <title>WebGIS Tematik- Angka Kematian Bayi 2020 - Praktikum SIGWEB</title>
+    <meta content="" name="description" />
+    <meta content="" name="keywords" />
+
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon" />
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,600,600i,700,700i|Satisfy|Comic+Neue:300,300i,400,400i,700,700i"
+      rel="stylesheet"
+    />
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet" />
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet" />
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet" />
+
+    <!-- =======================================================
+  * Template Name: Delicious
+  * Updated: Mar 10 2023 with Bootstrap v5.2.3
+  * Template URL: https://bootstrapmade.com/delicious-free-restaurant-bootstrap-theme/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+  </head>
+
+  <body>
+    <!-- ======= Top Bar ======= -->
+    <section id="topbar" class="d-flex align-items-center fixed-top topbar-transparent">
+      <div
+        class="container-fluid container-xl d-flex align-items-center justify-content-center justify-content-lg-start"
+      >
+        <i class="bi bi-phone d-flex align-items-center"><span>+62 857 0206 3247</span></i>
+        <i class="bi bi-envelope ms-4 d-none d-lg-flex align-items-center"
+          ><span>yulsa.wahyu.andiny@mail.ugm.ac.id</span></i
+        >
+      </div>
+    </section>
+
+    <!-- ======= Header ======= -->
+    <header id="header" class="fixed-top d-flex align-items-center header-transparent">
+      <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+        <div class="logo me-auto">
+          <h1><a href="index.html">WEBGIS</a></h1>
+          <!-- Uncomment below if you prefer to use an image logo -->
+          <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+        </div>
+
+        <nav id="navbar" class="navbar order-last order-lg-0">
+          <ul>
+            <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+            <li><a class="nav-link scrollto" href="#about">Tentang</a></li>
+            <li><a class="nav-link scrollto" href="#contact">Peta AKB</a></li>
+            <li><a class="nav-link scrollto" href="#events">Info</a></li>
+            <li><a class="nav-link scrollto" href="#specials">Upaya</a></li>
+            <li><a class="nav-link scrollto" href="#gallery">Berita</a></li>
+            <li><a class="nav-link scrollto" href="#book-a-table">Diskusi</a></li>
+            <li><a class="nav-link scrollto" href="#chefs">Profil</a></li>
+            
+          </ul>
+          <i class="bi bi-list mobile-nav-toggle"></i>
+        </nav>
+        <!-- .navbar -->
+
+        <div class="d-none d-lg-block ms-lg-3">
+          <a
+            class="btn custom-btn custom-border-btn custom-blue-btn"
+            data-bs-toggle="offcanvas"
+            href="#offcanvasExample"
+            role="button"
+            aria-controls="offcanvasExample"
+            >Member Login</a
+          >
+        </div>
+      </div>
+    </header>
+    <!-- End Header -->
+
+    <!-- Login -->
+    <div
+      class="offcanvas offcanvas-end"
+      data-bs-scroll="true"
+      tabindex="-1"
+      id="offcanvasExample"
+      aria-labelledby="offcanvasExampleLabel"
+    >
+      <div class="offcanvas-header">
+        <h1 class="offcanvas-title" id="offcanvasExampleLabel">Member Login</h1>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-body d-flex flex-column">
+        <form class="custom-form member-login-form" action="#" method="post" role="form">
+          <div class="member-login-form-body">
+            <div class="mb-4">
+              <label class="form-label mb-2" for="member-login-number">Nomor Anggota</label>
+              <input
+                type="text"
+                name="member-login-number"
+                id="member-login-number"
+                class="form-control"
+                placeholder="Masukkan Nomor Anggota"
+                required
+              />
+            </div>
+            <div class="mb-4">
+              <label class="form-label mb-2" for="member-login-password">Kata Sandi</label>
+              <input
+                type="password"
+                name="member-login-password"
+                id="member-login-password"
+                pattern="[0-9a-zA-Z]{4,10}"
+                class="form-control"
+                placeholder="Isikan Kata Sandi"
+                required=""
+              />
+            </div>
+            <div class="form-check mb-4">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+              <label class="form-check-label" for="flexCheckDefault">Ingat Saya</label>
+            </div>
+            <div class="col-lg-5 col-md-7 col-8 mx-auto">
+              <button type="submit" class="form-control custom-btn custom-border-btn">Login</button>
+            </div>
+            <div class="text-center my-4">
+              <a href="#">Lupa kata sandi?</a>
+            </div>
+          </div>
+        </form>
+        <div class="mt-auto mb-5">
+          <p>
+            <strong class="text-white me-3">Ada Pertanyaan?</strong>
+            <a href="https://wa.me/qr/JNYTHDZJP7XKB1" class="contact-link" style="color: rgb(37, 37, 114);"> <br> Silakan Hubungi 0857-0206-3247</a>
+          </p>
+        </div>
+      </div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="#3D405B"
+          fill-opacity="1"
+          d="M0,224L34.3,192C68.6,160,137,96,206,90.7C274.3,85,343,139,411,144C480,149,549,107,617,122.7C685.7,139,754,213,823,240C891.4,267,960,245,1029,224C1097.1,203,1166,181,1234,160C1302.9,139,1371,117,1406,106.7L1440,96L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z"
+        ></path>
+      </svg>
+    </div>
+    <!-- END Login -->
+
+    <!-- ======= Hero Section ======= -->
+    <section id="hero">
+      <div class="hero-container">
+        <div
+          id="heroCarousel"
+          data-bs-interval="5000"
+          class="carousel slide carousel-fade"
+          data-bs-ride="carousel"
+        >
+          <ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
+
+          <div class="carousel-inner" role="listbox">
+            <!-- Slide 1 -->
+            <div
+              class="carousel-item active"
+              style="background-image: url(assets/img/slide/1.png)"
+            >
+              <div class="carousel-container">
+                <div class="carousel-content">
+                  <h2 class="animate__animated animate__fadeInDown">
+                    <span>Selamat Datang</span> di WEBGIS Tematik
+                  </h2>
+                  <p class="animate__animated animate__fadeInUp">
+                    Selamat datang di WebGIS Angka Kematian Bayi di Daerah Istimewa Yogyakarta
+                    (DIY)! Temukan dan pahami distribusi angka kematian bayi di DIY tahun 2020
+                    melalui peta tematik interaktif kami. Jelajahi setiap zona dan temukan bagaimana
+                    tingkat angka kematian bayi berbeda-beda di setiap wilayah DIY.
+                  </p>
+                  <div>
+                    <div class="d-none d-lg-block ms-lg-3">
+                      <a
+                        class="btn custom-btn custom-border-btn custom-blue-btn"
+                        data-bs-toggle="offcanvas"
+                        href="#offcanvasExample"
+                        role="button"
+                        aria-controls="offcanvasExample"
+                        >Login dulu</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="carousel-item" style="background-image: url(assets/img/slide/2.png)">
+              <div class="carousel-container">
+                <div class="carousel-content">
+                  <h2 class="animate__animated animate__fadeInDown">Jelajahi Sekitarmu!</h2>
+                  <p class="animate__animated animate__fadeInUp">
+                    Mengetahui distribusi spasial angka kematian bayi sangat penting. 
+                    Pada slide ini, Anda dapat melihat peta tematik yang menunjukkan perbedaan angka kematian bayi di setiap wilayah DIY. Analisis ini memberi kita wawasan untuk merumuskan langkah-langkah yang tepat dalam mengatasi isu kematian bayi.
+                  </p>
+                  <div>
+                    <a
+                      href="#contact"
+                      class="btn-book animate__animated animate__fadeInUp scrollto"
+                      >Lihat peta</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="carousel-item" style="background-image: url(assets/img/slide/3.png)">
+              <div class="carousel-container">
+                <div class="carousel-content">
+                  <h2 class="animate__animated animate__fadeInDown">Peta Tematik</h2>
+                  <p class="animate__animated animate__fadeInUp">
+                    Angka kematian bayi bukanlah sekadar statistik, tetapi nyawa yang berharga. 
+                    Pada slide ini, kita akan melihat upaya-upaya pemerintah, masyarakat, dan sektor-sektor terkait dalam menangani masalah ini.  
+                    Mari bersama-sama berkontribusi dalam mengurangi angka kematian bayi dengan memberikan perhatian dan perawatan yang baik kepada ibu dan bayi.
+                  </p>
+                  <div>
+                    <a href="#specials" class="btn-menu animate__animated animate__fadeInUp scrollto"
+                      >Lihat Upaya</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <a class="carousel-control-prev" href="#heroCarousel" role="button" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
+          </a>
+
+          <a class="carousel-control-next" href="#heroCarousel" role="button" data-bs-slide="next">
+            <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- End Hero -->
+
+    <main id="main">
+      <!-- ======= About Section ======= -->
+      <section id="about" class="about">
+        <div class="container-fluid">
+          <div class="row">
+            <div
+              class="col-lg-5 align-items-stretch video-box"
+              style="background-image: url('assets/img/about.png')"
+            >
+              <a
+                href="https://youtu.be/Sbt1nzQpPwc"
+                class="venobox play-btn mb-4"
+                data-vbtype="video"
+                data-autoplay="true"
+              ></a>
+            </div>
+
+            <div class="col-lg-7 d-flex flex-column justify-content-center align-items-stretch">
+              <div class="content">
+                <h3>Angka Kematian Bayi <strong>pentingkah dibahas?</strong></h3>
+                <p>
+                  Angka kematian bayi adalah jumlah kematian bayi (usia 0-1 tahun) per 1.000
+                  kelahiran hidup dalam satu tahun. Informasi ini sangat penting karena memberikan
+                  gambaran tentang tingkat keselamatan dan kesejahteraan anak-anak yang baru lahir
+                  di wilayah DIY. Melalui WebGIS kami, kami berupaya memberikan pemahaman yang lebih
+                  mendalam tentang distribusi angka kematian bayi di setiap zona wilayah DIY.
+                </p>
+                <p class="fst-italic">
+                  Membahas angka kematian bayi sangat penting karena memiliki implikasi yang
+                  signifikan dalam konteks kesehatan masyarakat dan pembangunan wilayah. Berikut
+                  adalah beberapa alasan mengapa pembahasan tentang angka kematian bayi sangat
+                  penting:
+                </p>
+                <ul>
+                  <li>
+                    <i class="bx bx-check-double"></i> Angka kematian bayi yang tinggi menunjukkan
+                    adanya masalah kesehatan yang serius dan adanya kebutuhan untuk meningkatkan
+                    upaya pencegahan penyakit dan perawatan medis.
+                  </li>
+                  <li>
+                    <i class="bx bx-check-double"></i> Tingkat angka kematian bayi mencerminkan
+                    kualitas hidup anak-anak yang baru lahir dan menunjukkan kemampuan suatu wilayah
+                    dalam melindungi kehidupan mereka
+                  </li>
+                  <li>
+                    <i class="bx bx-check-double"></i> Informasi ini membantu dalam mengukur
+                    efektivitas program kesehatan, mengidentifikasi kelemahan dalam sistem perawatan
+                    kesehatan, dan merencanakan intervensi yang lebih baik untuk meningkatkan
+                    kualitas hidup anak-anak.
+                  </li>
+                  <li>
+                    <i class="bx bx-check-double"></i> Pembahasan tentang angka kematian bayi juga
+                    membantu kita memahami penyebab dan faktor risiko yang berkontribusi pada
+                    kematian bayi guna mengarahkan upaya pencegahan, meningkatkan akses terhadap
+                    layanan kesehatan yang tepat, dan menyusun kebijakan yang mendukung penurunan
+                    angka kematian bayi.
+                  </li>
+                  <li>
+                    <i class="bx bx-check-double"></i> Angka kematian bayi yang rendah merupakan
+                    indikator kemajuan pembangunan wilayah.
+                  </li>
+                </ul>
+                <p>
+                  Dengan demikian, membahas angka kematian bayi adalah langkah penting untuk
+                  meningkatkan pemahaman kita tentang isu kesehatan masyarakat, mengidentifikasi
+                  tantangan yang perlu diatasi, serta merancang dan melaksanakan intervensi yang
+                  efektif. Melalui kesadaran dan tindakan yang tepat, kita dapat bekerja bersama
+                  untuk mengurangi angka kematian bayi dan menciptakan masa depan yang lebih baik
+                  bagi anak-anak kita.
+                  <br />
+
+                  <br />
+                  Di samping adalah Video tentang Angka Kematian Bayi, dari Channel Youtube Humas
+                  BPS NTT
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End About Section -->
+
+      <!-- ======= Whu Us Section ======= -->
+      <section id="why-us" class="why-us">
+        <div class="container">
+          <div class="section-title">
+            <h2>Tren Kasus Kematian Bayi 4 tahun terakhir</span></h2>
+            <p>
+              Data berikut merupakan angka total seluruh wilayah di Provinsi Daerah Istimewa Yogyakarta.
+              Sumber data tersebut adalah Situs BAPPEDA atau link berikut: <br>
+               <a href="http://bappeda.jogjaprov.go.id/dataku/infografik/angka_kematian_bayi">Link Website BAPPEDA</a>
+            </p>
+          </div>
+          <div class="row">
+            <div class="col-lg-3">
+              <div class="box">
+                <center><span>2019</span>
+                <h4>366 Kasus</h4></center>
+                <p>
+                  Detail:
+                  <br>
+                  > 107 kasus di Kabupaten Bantul <br>
+                  > 78 kasus di Kabupaten Gunungkidul <br>
+                  > 47 kasus di Kabupaten Kulon Progo <br>
+                  > 55 kasus di Kabupaten Sleman <br>
+                  > 24 kasus di Kabupaten Kota Yogyakarta.
+                </p>
+              </div>
+            </div>
+
+            <div class="col-lg-3">
+              <div class="box">
+                <center><span>2020</span>
+                <h4>282 Kasus</h4></center>
+                <p>
+                  Detail:
+                  <br>
+                  > 110 kasus di Kabupaten Bantul <br>
+                  > 64 kasus di Kabupaten Gunungkidul <br>
+                  > 38 kasus di Kabupaten Kulon Progo <br>
+                  > 57 kasus di Kabupaten Sleman <br>
+                  > 35 kasus di Kabupaten Kota Yogyakarta.
+                </p>
+              </div>
+            </div>
+
+            <div class="col-lg-3">
+              <div class="box">
+              <center><span>2021</span>
+                <h4>270 Kasus</h4></center>
+                <p>
+                  Detail:
+                  <br>
+                  > 68 kasus di Kabupaten Bantul <br>
+                  > 74 kasus di Kabupaten Gunungkidul <br>
+                  > 54 kasus di Kabupaten Kulon Progo <br>
+                  > 46 kasus di Kabupaten Sleman <br>
+                  > 33 kasus di Kabupaten Kota Yogyakarta.
+                </p>
+              </div>
+            </div>
+
+            <div class="col-lg-3">
+              <div class="box">
+              <center><span>2021</span>
+                <h4>300 Kasus</h4></center>
+                <p>
+                  Detail:
+                  <br>
+                  > 62 kasus di Kabupaten Bantul <br>
+                  > 80 kasus di Kabupaten Gunungkidul <br>
+                  > 44 kasus di Kabupaten Kulon Progo <br>
+                  > 59 kasus di Kabupaten Sleman <br>
+                  > 26 kasus di Kabupaten Kota Yogyakarta.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Whu Us Section -->
+
+      <!-- ======= Testimonials Section ======= -->
+      <section id="testimonials" class="testimonials">
+        <div class="container position-relative">
+          <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="testimonial-item">
+                  <h1>
+                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                    Setiap Bayi Layak Mendapatkan Kesempatan Hidup: Jangan Biarkan Angka Kematian Bayi Terus Meningkat!
+                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                  </h1>
+                </div>
+                
+              </div>
+              <!-- End testimonial item -->
+
+              <div class="swiper-slide">
+                <div class="testimonial-item">
+                  <h1>
+                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                    Pendidikan, Kesejahteraan, dan Perawatan: Kunci Penurunan Angka Kematian Bayi!
+                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                  </h1>
+                </div>
+              </div>
+              <!-- End testimonial item -->
+
+              <div class="swiper-slide">
+                <div class="testimonial-item">
+                  <h1>
+                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                    Bayi Sehat, Generasi Kuat - Peduli dan Bertindak untuk Masa Depan yang Lebih Baik!
+                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                  </h1>
+                </div>
+              </div>
+              <!-- End testimonial item -->
+
+              <div class="swiper-slide">
+                <div class="testimonial-item">
+                  <h1>
+                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                    Beri Cinta dan Perawatan Tepat pada Bayi, Masa Depan Cerah Dimulai dari Sini!
+                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                  </h1>
+                </div>
+              </div>
+              <!-- End testimonial item -->
+
+              <div class="swiper-slide">
+                <div class="testimonial-item">
+                  <h1>
+                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                    Selamatkan Nyawa Bayi, Jaga Kesehatan Ibu!
+                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                  </h1>
+                </div>
+              </div>
+              <!-- End testimonial item -->
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </section>
+      <!-- End Testimonials Section -->
+
+      <!-- ======= Contact Section ======= -->
+      <section id="contact" class="contact">
+        <div class="container">
+          <div class="section-title">
+            <h2><span>Peta Tematik</span> Angka Kematian Bayi 2020</h2>
+            <p>
+              Peta ini merupakan peta tematik angka kematian bayi tiap Kecamatan di Daerah Istimewa Yogyakarta pada tahun 2020. 
+              Selain itu peta ini juga memuat informasi terkait fasilitas kesehatan berupa Rumah Sakit dan Puskesmas di Daerah Istimewa Yogyakarta.
+            </p>
+          </div>
+        </div>
+
+        <div class="map" style="display: flex; justify-content: center;">
+          <iframe
+            style="border: 0; width: 94%; height: 1010px"
+            src="http://localhost:8090/mapstore/#/dashboard/116"
+            frameborder="0"
+            allowfullscreen
+          ></iframe>
+        </div>        
+      </section>
+      <!-- End Contact Section -->
+
+      <!-- ======= Events Section ======= -->
+      <section id="events" class="events">
+        <div class="container">
+          <div class="section-title">
+            <h2>Sekilas <span> Info</span></h2>
+          </div>
+
+          <div class="events-slider swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="row event-item">
+                  <div class="col-lg-6">
+                    <img src="assets/img/event-birthday.png" class="img-fluid" alt="" />
+                  </div>
+                  <div class="col-lg-6 pt-4 pt-lg-0 content">
+                    <div class="price">
+                      <p><span>Persebaran Rumah Sakit</span></p>
+                    </div>
+                    <h4>Total ada 83 Rumah Sakit di DIY</h4>
+                    <ul>
+                      <li>
+                        <i class="bi bi-check-circle"></i> Terdapat 17 Rumah sakit di Kabupaten Bantul
+                      </li>
+                      <li>
+                        <i class="bi bi-check-circle"></i> Terdapat 6 Rumah Sakit di Kabupaten Gunungkidul
+                      </li>
+                      <li>
+                        <i class="bi bi-check-circle"></i> Terdapat 22 Rumah Sakit di Kota Yogyakarta
+                      </li>
+                      <li>
+                        <i class="bi bi-check-circle"></i> Terdapat 10 Rumah Sakit di Kabupaten Kulon Progo
+                      </li>
+                      <li>
+                        <i class="bi bi-check-circle"></i> Terdapat 28 Rumah Sakit di Kabupaten Sleman
+                      </li>
+                    </ul>
+                    <p>
+                      Dengan menggunakan WebGIS untuk mengetahui persebaran rumah sakit, kita dapat meningkatkan aksesibilitas, perencanaan, dan distribusi pelayanan kesehatan yang merata di DIY. 
+                      Ini akan membantu meningkatkan respons terhadap kebutuhan kesehatan masyarakat dan mengoptimalkan pemanfaatan sumber daya kesehatan yang tersedia.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- End testimonial item -->
+
+              <div class="swiper-slide">
+                <div class="row event-item">
+                  <div class="col-lg-6">
+                    <img src="assets/img/event-private.png" class="img-fluid" alt="" />
+                  </div>
+                  <div class="col-lg-6 pt-4 pt-lg-0 content">
+                    <div class="price">
+                      <p><span>Infografis Kasus Kematian Bayi</span></p>
+                    </div>
+                    <h4>Total kasus mencakup 5 Kabupaten di DIY </h4>
+                    <ul>
+                      <li>
+                        <i class="bi bi-check-circle"></i> Terdapat 318 Kasus Kematian Bayi di Tahun 2018
+                      </li>
+                      <li>
+                        <i class="bi bi-check-circle"></i> Terdapat 366 Kasus Kematian Bayi di Tahun 2019
+                      </li>
+                      <li>
+                        <i class="bi bi-check-circle"></i> Terdapat 282 Kasus Kematian Bayi di Tahun 2020
+                      </li>
+                      <li>
+                        <i class="bi bi-check-circle"></i> Terdapat 270 Kasus Kematian Bayi di Tahun 2021
+                      </li>
+                      <li>
+                        <i class="bi bi-check-circle"></i> Terdapat 300 Kasus Kematian Bayi di Tahun 2022
+                      </li>
+                    </ul>
+                    <p>
+                      Dengan memahami statistik data kematian bayi 5 tahun terakhir di DIY, kita dapat mengidentifikasi kebutuhan, mengarahkan upaya pencegahan yang tepat, dan memonitor progres penurunan angka kematian bayi. 
+                      Data ini menjadi dasar pengambilan keputusan berdasarkan bukti untuk meningkatkan kesehatan dan kualitas hidup bayi di DIY.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- End testimonial item -->
+
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </section>
+      <!-- End Events Section -->
+
+      <!-- ======= Specials Section ======= -->
+      <section id="specials" class="specials">
+        <div class="container">
+          <div class="section-title">
+            <h2>Upaya Pemberantasan <span>Angka Kematian yang Tinggi</span></h2>
+            <p>
+              Untuk mengatasi serta mencegah angka kematian bayi yang tinggi, diperlukan upaya kolaboratif dari pemerintah, masyarakat, dan sektor-sektor terkait. Berikut adalah beberapa upaya yang dapat dilakukan:
+            </p>
+          </div>
+
+          <div class="row">
+            <div class="col-lg-3">
+              <ul class="nav nav-tabs flex-column">
+                <li class="nav-item">
+                  <a class="nav-link active show" data-bs-toggle="tab" href="#tab-1"
+                    >Upaya Pemerintah</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-bs-toggle="tab" href="#tab-2">Upaya Masyarakat</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-bs-toggle="tab" href="#tab-3">Sektor Pendidikan</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-bs-toggle="tab" href="#tab-4">Sektor Ekonomi</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-bs-toggle="tab" href="#tab-5">Sektor Infrastruktur</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-bs-toggle="tab" href="#tab-6">LSM dan Organisasi Masyarakat</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-9 mt-4 mt-lg-0">
+              <div class="tab-content">
+                <div class="tab-pane active show" id="tab-1">
+                  <div class="row">
+                    <div class="col-lg-8 details order-2 order-lg-1">
+                      <ul>
+                        <li>
+                          <i></i> Meningkatkan aksesibilitas dan kualitas pelayanan kesehatan maternal dan neonatal di wilayah yang rentan.
+                        </li>
+                        <li>
+                          <i></i> Meningkatkan jumlah dan kualitas fasilitas kesehatan, termasuk rumah sakit, puskesmas, dan posyandu.
+                        </li>
+                        <li>
+                          <i></i> Meningkatkan ketersediaan dan aksesibilitas program imunisasi bagi ibu dan bayi.
+                        </li>
+                        <li>
+                          <i></i> Mendorong adopsi praktik persalinan yang aman dan menyediakan dukungan pascapersalinan yang komprehensif.
+                        </li>
+                        <li>
+                          <i></i> Memperkuat sistem rujukan yang efektif antara fasilitas kesehatan tingkat pertama dan tingkat lanjutan.
+                        </li>
+                        <li>
+                          <i></i> Mengimplementasikan program penyuluhan dan edukasi kesehatan kepada ibu hamil, keluarga, dan masyarakat umum tentang perawatan bayi yang baik, gizi, dan praktik kesehatan lainnya.
+                        </li>
+                      </ul>
+                    </div>
+                    
+                  </div>
+                </div>
+                <div class="tab-pane" id="tab-2">
+                  <div class="row">
+                    <div class="col-lg-8 details order-2 order-lg-1">
+                      <ul>
+                        <li>
+                          <i></i> Meningkatkan kesadaran masyarakat akan pentingnya perawatan bayi yang baik dan kesehatan maternal.
+                        </li>
+                        <li>
+                          <i></i> Mendorong partisipasi aktif ibu hamil dan keluarga dalam perawatan antenatal, persalinan, dan perawatan pasca persalinan.
+                        </li>
+                        <li>
+                          <i></i> Mendorong praktik pemberian ASI eksklusif selama enam bulan pertama kehidupan bayi.
+                        </li>
+                        <li>
+                          <i></i> Mendorong praktik kebersihan dan sanitasi yang baik di rumah dan lingkungan sekitar.
+                        </li>
+                        <li>
+                          <i></i> Memperkuat sistem rujukan yang efektif antara fasilitas kesehatan tingkat pertama dan tingkat lanjutan.
+                        </li>
+                        <li>
+                          <i></i> Mengimplementasikan program penyuluhan dan edukasi kesehatan kepada ibu hamil, keluarga, dan masyarakat umum tentang perawatan bayi yang baik, gizi, dan praktik kesehatan lainnya.
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane" id="tab-3">
+                  <div class="row">
+                    <div class="col-lg-8 details order-2 order-lg-1">
+                      <ul>
+                        <li>
+                          <i></i>  Mendorong akses pendidikan yang baik bagi perempuan, yang dapat membantu meningkatkan pengetahuan kesehatan dan kesadaran akan perawatan bayi.
+                        </li>
+                        <li>
+                          <i></i>  Mendorong adanya program pendidikan kesehatan di sekolah yang meliputi pengetahuan tentang perawatan bayi, gizi, kesehatan ibu, dan praktik kesehatan lainnya.
+                        </li>
+                        <li>
+                          <i></i>  Menyediakan pelatihan khusus kepada guru dan staf sekolah tentang kesehatan maternal dan neonatal, sehingga mereka dapat memberikan informasi yang akurat dan relevan kepada siswa.
+                        </li>
+                        </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane" id="tab-4">
+                  <div class="row">
+                    <div class="col-lg-8 details order-2 order-lg-1">
+                      <ul>
+                        <li>
+                          <i></i> Mendorong akses ekonomi yang lebih baik bagi keluarga dengan memberikan peluang kerja, pelatihan, dan program pengentasan kemiskinan.
+                        </li>
+                        <li>
+                          <i></i> Mendorong penciptaan peluang kerja dan kewirausahaan bagi perempuan untuk membantu meningkatkan akses ekonomi keluarga.
+                        </li>
+                        <li>
+                          <i></i> Memberikan pelatihan dan pendidikan keterampilan kepada perempuan dalam bidang kesehatan dan perawatan bayi, sehingga mereka dapat menjadi tenaga kerja yang terampil dalam sektor kesehatan.
+                        </li>
+                        </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane" id="tab-5">
+                  <div class="row">
+                    <div class="col-lg-8 details order-2 order-lg-1">
+                      <ul>
+                        <li>
+                          <i></i> Meningkatkan aksesibilitas transportasi dan infrastruktur dasar seperti air bersih dan sanitasi yang memadai.
+                        </li>
+                        <li>
+                          <i></i> Meningkatkan aksesibilitas transportasi ke fasilitas kesehatan, terutama di daerah pedesaan yang terpencil.
+                        </li>
+                        <li>
+                          <i></i> Memperluas jaringan air bersih dan sanitasi yang aman, sehingga keluarga dapat menjaga kebersihan dan kesehatan lingkungan di sekitar mereka.
+                        </li>
+                        </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane" id="tab-6">
+                  <div class="row">
+                    <div class="col-lg-8 details order-2 order-lg-1">
+                      <ul>
+                        <li>
+                          <i></i> Berperan dalam menyediakan dukungan, sumber daya, dan program-program yang fokus pada kesehatan ibu dan bayi.
+                        </li>
+                        <li>
+                          <i></i> Mengadakan program penyuluhan dan pelatihan bagi masyarakat tentang pentingnya perawatan bayi yang baik, imunisasi, nutrisi, dan praktik kesehatan lainnya.
+                        </li>
+                        <li>
+                          <i></i> Menyediakan dukungan dan bantuan kepada keluarga yang membutuhkan, termasuk akses ke layanan kesehatan, pemantauan pertumbuhan bayi, dan layanan pendukung psikososial.
+                        </li>
+                        </ul>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Specials Section -->
+
+      <!-- ======= Gallery Section ======= -->
+      <section id="gallery" class="gallery">
+        <div class="container-fluid">
+          <div class="section-title">
+            <h2>Berita terkait <span>Angka Kmematian Bayi di Yogyakarta</span></h2>
+            <p>
+              Klik gambar untuk mengetahui detailnya!
+            </p>
+          </div>
+
+          <div class="row g-0">
+            <div class="col-lg-3 col-md-4">
+              <div class="gallery-item">
+                <a href="https://jogjapolitan.harianjogja.com/read/2022/10/06/510/1113972/kematian-ibu-dan-bayi-masih-tinggi-di-diy-dp3ap2-diy-tingkatkan-pemberdayaan-gender" 
+                class="gallery-lightbox">
+                  <img src="assets/img/gallery/1.png" alt="" class="img-fluid" />
+                  <div class="overlay">
+                    <div class="text">Kematian Ibu dan Bayi Masih Tinggi di DIY, DP3AP2 DIY Tingkatkan Pemberdayaan Gender</div>
+                  </div>
+                </a>
+              </div> 
+            </div>
+
+            <div class="col-lg-3 col-md-4">
+              <div class="gallery-item">
+                <a href="https://databoks.katadata.co.id/datapublish/2021/10/22/kematian-balita-di-indonesia-capai-282-ribu-pada-2020" 
+                class="gallery-lightbox">
+                  <img src="assets/img/gallery/2.png" alt="" class="img-fluid" />
+                  <div class="overlay">
+                    <div class="text">Kematian Balita di Indonesia Capai 28,2 Ribu pada 2020
+                    </div>
+                  </div>
+                </a>
+              </div> 
+            </div>
+
+            <div class="col-lg-3 col-md-4">
+              <div class="gallery-item">
+                <a href="https://kesehatan.jogjakota.go.id/uploads/dokumen/profil_dinkes_2020_data_2019.pdf" 
+                class="gallery-lightbox">
+                  <img src="assets/img/gallery/3.png" alt="" class="img-fluid" />
+                  <div class="overlay">
+                    <div class="text">Profil Kesehatan Tahun 2020 Kota Yogyakarta</div>
+                  </div>
+                </a>
+              </div> 
+            </div>
+
+            <div class="col-lg-3 col-md-4">
+              <div class="gallery-item">
+                <a href="https://www.dw.com/id/pbb-akibat-covid19-lebih-dari-2-juta-bayi-meninggal/a-55196850" 
+                class="gallery-lightbox">
+                  <img src="assets/img/gallery/4.png" alt="" class="img-fluid" />
+                  <div class="overlay">
+                    <div class="text">PBB: COVID-19 Perparah Kematian Bayi Lebih Dari 2 Juta Kasus</div>
+                  </div>
+                </a>
+              </div> 
+            </div>
+
+            <div class="col-lg-3 col-md-4">
+              <div class="gallery-item">
+                <a href="https://news.republika.co.id/berita/mivdvg/tiap-tahun-80-ribu-bayi-meninggal-di-indonesia" 
+                class="gallery-lightbox">
+                  <img src="assets/img/gallery/5.png" alt="" class="img-fluid" />
+                  <div class="overlay">
+                    <div class="text">Tiap Tahun 80 Ribu Bayi Meninggal di Indonesia</div>
+                  </div>
+                </a>
+              </div> 
+            </div>
+
+            <div class="col-lg-3 col-md-4">
+              <div class="gallery-item">
+                <a href="http://scholar.unand.ac.id/id/eprint/5771" 
+                class="gallery-lightbox">
+                  <img src="assets/img/gallery/6.png" alt="" class="img-fluid" />
+                  <div class="overlay">
+                    <div class="text">FAKTOR-FAKTOR YANG MEMPENGARUHI ANGKA KEMATIAN BAYI DI INDONESIA</div>
+                  </div>
+                </a>
+              </div> 
+            </div>
+
+            <div class="col-lg-3 col-md-4">
+              <div class="gallery-item">
+                <a href="https://jogja.suara.com/read/2021/12/03/143807/dampak-pandemi-angka-kematian-ibu-dan-bayi-di-bantul-meningkat" 
+                class="gallery-lightbox">
+                  <img src="assets/img/gallery/7.png" alt="" class="img-fluid" />
+                  <div class="overlay">
+                    <div class="text">Dampak Pandemi, Angka Kematian Ibu dan Bayi di Bantul Meningkat</div>
+                  </div>
+                </a>
+              </div> 
+            </div>
+
+            <div class="col-lg-3 col-md-4">
+              <div class="gallery-item">
+                <a href="https://kumparan.com/pandangan-jogja/penurunan-angka-kelahiran-bayi-di-diy-tidak-perlu-dikhawatirkan-20aqeRBjplh" 
+                class="gallery-lightbox">
+                  <img src="assets/img/gallery/8.png" alt="" class="img-fluid" />
+                  <div class="overlay">
+                    <div class="text">Penurunan Angka Kelahiran Bayi di DIY Tidak Perlu Dikhawatirkan</div>
+                  </div>
+                </a>
+              </div> 
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Gallery Section -->
+
+      <!-- ======= Book A Table Section ======= -->
+      <section id="book-a-table" class="book-a-table">
+        <div class="container">
+          <div class="section-title">
+            <h2>Kolom <span> Diskusi </span></h2>
+            
+          </div>
+          <p style="text-align: center;">
+            Kami menghargai saran dan kritik Anda!<br>
+            Kami ingin memberikan pengalaman terbaik kepada pengguna WebGIS ini, dan pendapat Anda sangat berarti bagi kami. 
+            Silakan berbagi saran, kritik, atau masukan apapun yang dapat membantu kami meningkatkan layanan ini. 
+            Kami terbuka untuk mendengar perspektif Anda dan berkomitmen untuk terus memperbaiki dan memperbarui WebGIS Angka Kematian Bayi di DIY.<br> 
+            Terima kasih atas partisipasi Anda dalam upaya meningkatkan kualitas layanan kami. 
+          </p>
+
+          <div class="container mt-5">
+            <div class="info-wrap">
+              <div class="row">
+                <div class="col-lg-3 col-md-6 info">
+                  <i class="bi bi-geo-alt"></i>
+                  <h4>Lokasi:</h4>
+                  <p>Gedung Perpustakaan SV UGM<br />Sekip Unit 1, Blimbing Sari, Caturtunggal, Depok, Sleman</p>
+                </div>
+  
+                <div class="col-lg-3 col-md-6 info mt-4 mt-lg-0">
+                  <i class="bi bi-clock"></i>
+                  <h4>Jam buka:</h4>
+                  <p>Monday-Friday:<br />08:00 - 17.00</p>
+                </div>
+  
+                <div class="col-lg-3 col-md-6 info mt-4 mt-lg-0">
+                  <i class="bi bi-envelope"></i>
+                  <h4>Email:</h4>
+                  <p>yulsa.wahyu.andiny@mail.ugm.ac.id</p>
+                </div>
+  
+                <div class="col-lg-3 col-md-6 info mt-4 mt-lg-0">
+                  <i class="bi bi-phone"></i>
+                  <h4>Telpon:</h4>
+                  <p>+628 57 0206 3247</p>
+                </div>
+              </div>
+            </div>
+  
+            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+              <div class="row">
+                <div class="col-md-6 form-group">
+                  <input
+                    type="text"
+                    name="name"
+                    class="form-control"
+                    id="name"
+                    placeholder="Tulis nama Anda disini"
+                    required
+                  />
+                </div>
+                <div class="col-md-6 form-group mt-3 mt-md-0">
+                  <input
+                    type="email"
+                    class="form-control"
+                    name="email"
+                    id="email"
+                    placeholder="Masukkan Email Anda disini"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="form-group mt-3">
+                <input
+                  type="text"
+                  class="form-control"
+                  name="subject"
+                  id="subject"
+                  placeholder="Topik"
+                  required
+                />
+              </div>
+              <div class="form-group mt-3">
+                <textarea
+                  class="form-control"
+                  name="message"
+                  rows="5"
+                  placeholder="MPesan, Kritik, dan Saran"
+                  required
+                ></textarea>
+              </div>
+              <div class="my-3">
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Your message has been sent. Thank you!</div>
+              </div>
+              <div class="text-center"><button type="submit">Kirim Pesan</button></div>
+            </form>
+          </div>
+        </div>
+      </section>
+      <!-- End Book A Table Section -->
+      
+    </main>
+    <!-- End #main -->
+
+    <!-- ======= Chefs Section ======= -->
+    <section id="chefs" class="chefs">
+      <div class="container">
+        <div class="section-title">
+          <h2>Profil <span>Creator WEBGIS</span></h2>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-12 col-md-6">
+            <div class="member">
+              <div class="pic">
+                <img src="assets/img/chefs/yulsa.png" class="img-fluid" alt="" style="width: 50%; height: 50%;" />
+              </div>
+              <div class="member-info">
+                <h4>Yulsa Wahyu Andiny</h4>
+                <span>Mahasiswa Teknologi Survei dan Pemetaan Dasar <br> (21/478478/SV/19308) </span>
+                <br> Sekolah Vokasi <br> Universitas Gadjah Mada
+                <div class="social">
+                  <a href="https://www.instagram.com/yulsaandiny_/" class="instagram"><i class="bx bxl-instagram"></i></a>
+              <a href="https://api.whatsapp.com/send/?phone=6285702063247&text&type=phone_number&app_absent=0" class="google-plus"><i class="bx bxl-whatsapp"></i></a>
+              <a href="https://www.linkedin.com/in/yulsa-andiny-a8962a1b4" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Chefs Section -->
+
+        <!-- ======= Footer Section ======= -->
+        <footer id="footer">
+          <div class="container">
+            <h3>WEBGIS Peta Tematik</h3>
+            <p>
+              Website-GIS ini dibuat untuk memenuhi tugas Minggu ke-15 dan Ujian Akhir Semester Genap <br />
+              Mata Kuliah Praktikum Sistem Informasi Geospasial Berbasis WEB <br />
+              Program Studi Teknologi Survei dan Pemetaan Dasar <br />
+              Sekolah Vokasi <br />
+              Universitas Gadjah Mada <br />
+              Tahun Akademik 2022/2023
+            </p>
+            <div class="social-links">
+              <img src="assets/img/logos/logo1.png" alt="Logo UGM" class="logo" style="max-width: 100px; max-height: 100px;"/>
+              <img src="assets/img/logos/logo2.jpg" alt="Logo TSP" class="logo" style="max-width: 100px; max-height: 100px;"/>
+            </div>
+            
+            <div class="copyright">
+              &copy; Copyright <strong><span>Yulsa Wahyu Andiny (21/478478/SV/19308)</span></strong
+              >. 2023 All Rights Reserved
+            </div>
+            <div class="credits">
+              <!-- All the links in the footer should remain intact. -->
+              <!-- You can delete the links only if you purchased the pro version. -->
+              <!-- Licensing information: https://bootstrapmade.com/license/ -->
+              <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/delicious-free-restaurant-bootstrap-theme/ -->
+              Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> dan Yulsa
+            </div>
+          </div>
+        </footer>
+        <!-- End Footer Section -->
+
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"
+      ><i class="bi bi-arrow-up-short"></i
+    ></a>
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
